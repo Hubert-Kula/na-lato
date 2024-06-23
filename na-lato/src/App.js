@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 import GalleryPage from './Pages/Gallery-page';
 import Kontakt from './Pages/kontakt';
 import NaszeDomki from './Pages/nasze-domki';
-import Regulamin from './Pages/Regulamin'; // Import regulaminu
+import Regulamin from './Pages/regulamin'; // Import regulaminu
 
 function App() {
   return (
