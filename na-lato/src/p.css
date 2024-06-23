@@ -1,0 +1,19 @@
+.bottom-section {
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .image {
+    width: auto;
+    height: 200px;
+    margin-right: 10px;
+    object-fit: contain; /* Zachowuje oryginalne proporcje */
+  }
+  
+  
+  .text {
+    color: rgb(0, 0, 0); /* Różowy - tekst */
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,15 @@
+.photo-container {
+    cursor: pointer;
+  }
+  
+  .photo {
+    width: 150px;
+    height: auto;
+    border: 2px solid #ccc;
+    transition: transform 0.2s;
+  }
+  
+  .photo-container:hover .photo {
+    transform: scale(1.1);
+  }
+  

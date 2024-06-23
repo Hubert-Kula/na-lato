@@ -1,0 +1,22 @@
+import React from 'react';
+
+const Gallery = () => {
+  // Przykładowe nazwy plików zdjęć (ścieżki do zdjęć)
+  const imageFiles = [
+    '../static/media/Gallery/723A3815.jpg',
+    '../static/media/Gallery/723A3816x.jpg',
+    '../static/media/Gallery/723A3826.jpg',
+    '../static/media/Gallery/723A3834.jpg',
+    '../static/media/Gallery/723A3838.jpg'
+  ];
+
+  return (
+    <div className="gallery">
+      {imageFiles.map((image, index) => (
+        <img key={index} src={image} alt={`Zdjęcie ${index}`} />
+      ))}
+    </div>
+  );
+};
+
+export default Gallery;

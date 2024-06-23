@@ -1,0 +1,19 @@
+.top-section {
+  display: flex;
+  background-color: #00f; /* Niebieski - tło */
+  padding: 10px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Zapobiega powtarzaniu obrazka */
+}
+
+.text {
+  color: #f06; /* Różowy - tekst */
+  font-size: 14px;
+}
