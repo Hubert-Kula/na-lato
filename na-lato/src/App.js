@@ -6,6 +6,7 @@ import GalleryPage from './Pages/Gallery-page';
 import Kontakt from './Pages/kontakt';
 import NaszeDomki from './Pages/nasze-domki';
 import Regulamin from './Pages/regulamin'; // Import regulaminu
+import Apart from './Pages/apart.js'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/nasze-domki" element={<NaszeDomki />} />
           <Route path="/regulamin" element={<Regulamin />} />
+          <Route path='/apartament' element={<Apart />} />
         </Routes>
       </div>
     </Router>

@@ -3,18 +3,17 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 html, body, #root {
   height: 100%;
   margin: 0;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(241, 240, 240);  /* rgb(42, 182, 203); */
+  font-weight: 325; /* Ustawienie cienkiego (thin) stylu czcionki */
 }
 
-body {
-  font-family: Arial, sans-serif;
-}
 
 .fullscreen-image {
   position: relative;
@@ -208,3 +207,56 @@ h1 {
   color: white;
   text-align: center;
 }
+
+
+
+/* .nasze-domki {
+  font-family: 'Comfortaa', cursive;
+  padding: 20px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.nasze-domki .header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nasze-domki .header h1 {
+  font-size: 2.5rem;
+  color: #2ab6cb;
+}
+
+.nasze-domki .header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.nasze-domki .content h2,
+.nasze-domki .content h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #2ab6cb;
+}
+
+.nasze-domki .content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nasze-domki .content ul li {
+  margin-bottom: 10px;
+}
+
+.nasze-domki .content p {
+  margin-top: 20px;
+}
+
+.nasze-domki .content strong {
+  color: #2ab6cb;
+}
+
+ */
+
+
+

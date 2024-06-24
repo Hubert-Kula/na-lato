@@ -30,7 +30,6 @@ const GallerySection = () => {
     },
     title: {
       fontSize: '1.5em',
-      fontWeight: 'bold',
       marginBottom: '20px',
       color: 'rgb(42, 182, 203)',
     },

@@ -4,7 +4,7 @@
     padding: 20px;
     display: flex;
     justify-content: center;
-    z-index: 999999;
+    z-index: 999;
 }
   
 .custom-gallery {
@@ -34,6 +34,7 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.9);
+    z-index: 999;
 }
   
 .custom-modal-content {

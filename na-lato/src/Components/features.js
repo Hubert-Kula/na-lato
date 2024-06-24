@@ -33,9 +33,7 @@ const FeaturesSection = () => {
 {/*       <h2 style={styles.title}>Features</h2> */}
       <div style={styles.featureBox}>
 {/*         <h3 style={styles.title}>Feature 1</h3> */}
-        <p style={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non lobortis tortor. Donec mauris dolor, venenatis et orci ac, facilisis bibendum erat. Cras blandit lobortis arcu. Vestibulum bibendum vestibulum ipsum, ut placerat est bibendum aliquam. Vestibulum malesuada mauris et nisi convallis dignissim. Nam quis odio tortor. Duis ut sapien tincidunt, gravida dui in, accumsan ipsum.
-
-Donec ornare interdum neque, rhoncus fringilla urna pulvinar nec. Donec efficitur feugiat eros vitae cursus. Vivamus eu varius erat, luctus gravida purus. Cras sollicitudin ligula ut elit tempor accumsan. Mauris ut arcu quis eros dictum finibus a vel dui. Nulla facilisi. Nulla malesuada, ante ac varius faucibus, mauris augue dignissim dui, et volutpat justo dolor quis neque. Donec sit amet sem vel elit pharetra fermentum rhoncus a ex. Vivamus quis gravida massa, in tincidunt augue. In rutrum tristique posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc et placerat eros. Quisque ultricies gravida diam ac fermentum.</p>
+        <p style={styles.description}>Serdecznie zapraszamy do Dębek, gdzie spędzisz wyczekiwany urlop w wyjątkowym miejscu. Wybierając letni pobyt wakacyjny w miejscowości Dębki odkryją Państwo w pełni zalety wypoczynku nad morzem w Polsce, wśród pięknej przyrody. Piękna, szeroka plaża, czyste wody Bałtyku oraz rzeki Piaśnica, dziewicza przyroda - to wszystko tworzy niepowtarzalną, wakacyjną atmosferę.</p>
       </div>
 {/*       <div style={styles.featureBox}>
         <h3 style={styles.title}>Feature 2</h3>

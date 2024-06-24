@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './miniGallery.css';
-import zdjecie1 from '../Zdj/723A3834.jpg';
-import zdjecie2 from '../Zdj/723A3838.jpg';
-import zdjecie3 from '../Zdj/723A3847.jpg';
-import zdjecie4 from '../Zdj/723A3834.jpg'; // Upewnij się, że ta ścieżka jest poprawna
+import zdjecie1 from '../static/media/Gallery/16/723A4353.jpg';
+import zdjecie2 from '../static/media/Gallery/16/723A3826.jpg';
+import zdjecie3 from '../static/media/Gallery/16/_MG_8455.jpg';
+import zdjecie4 from '../static/media/Gallery/16/kuter.jpg'; // Upewnij się, że ta ścieżka jest poprawna
 
 const images = [
     zdjecie1,

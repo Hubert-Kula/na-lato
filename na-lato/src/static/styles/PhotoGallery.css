@@ -2,6 +2,9 @@
     width: 100%;
     padding: 0;
     overflow: hidden; /* Zapobiega pojawianiu się paska przewijania na stronie */
+    align-items: center;
+    justify-content: center;
+
   }
   
   .gallery-header {
@@ -78,5 +81,9 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+  }
+
+  #n7x2{
+    font-size: 40px;
   }
   
