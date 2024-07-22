@@ -1,34 +1,45 @@
 .App-reg {
-    text-align: center;
-  }
-  
-  .header-reg {
-    background-color: blue;
-    color: white;
-    height: 33vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .content-reg {
-    padding: 20px;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 800px;
-  }
-  
-  .content-reg h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .content-reg ol {
-    padding-left: 20px;
-  }
-  
-  .content-reg li {
-    margin-bottom: 10px;
-  }
-  
+  text-align: center;
+}
+
+.header-reg {
+  background-color: rgb(42, 182, 203); /* Turkusowy kolor */
+  color: white;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-reg {
+  padding: 20px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.content-reg h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-reg ol {
+  counter-reset: item;
+  margin-left: 0;
+  padding-left: 0
+}
+
+.content-reg li {
+  display: block;
+  margin-bottom: .5em;
+  margin-left: 2em;
+}
+
+.content-reg li::before {
+  display: inline-block;
+  content: counter(item) ") ";
+  counter-increment: item;
+  width: 2em;
+  margin-left: -2em;
+}

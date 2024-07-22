@@ -9,10 +9,10 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 library.add(fas, far, fab);
 
 const icons = [
-  { icon: 'fa-house', title: '9 domków', description: 'dla swóch rodzin' },
-  { icon: 'fa-umbrella-beach', title: '800m', description: 'od plaży' },
-  { icon: 'fa-bed', title: '2 sypalnie', description: 'na domek' },
-  { icon: 'fa-wifi', title: 'WI-FI', description: 'dostępne dla gości' },
+  { icon: 'fa-house', title: '9 Domków', description: '6-7 osobowych' },
+  { icon: 'fa-umbrella-beach', title: '850m', description: 'od plaży' },
+  { icon: 'fa-bed', title: '2 Sypialnie', description: 'w każdym domku' },
+  { icon: 'fa-child', title: 'Plac zabaw', description: 'dla dzieci' },
 ];
 
 const IconsSection = () => {

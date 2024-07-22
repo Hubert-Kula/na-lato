@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <div style={styles.container}>
-      <p>&copy; 2024 Dębki na lato. Strona objęta prawami autorskimi. Wykorzystywanie jej lub jakichkoliwe jej elentów bez zgody właściciel, jest naruszeniem przepisów dot. praw aytorskich.</p>
+      <p>&copy; 2024 Dębki na lato. Strona objęta prawami autorskimi. Wykorzystywanie jej lub jakichkolwiek jej elementów bezzgody właściciela jest naruszeniem przepisów dot. praw autorskich.</p>
     </div>
   );
 };

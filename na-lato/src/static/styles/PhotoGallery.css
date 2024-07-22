@@ -1,89 +1,130 @@
+/* styles.css */
+
 .photo-gallery {
-    width: 100%;
-    padding: 0;
-    overflow: hidden; /* Zapobiega pojawianiu się paska przewijania na stronie */
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  padding: 0;
+  overflow: hidden; /* Zapobiega pojawianiu się paska przewijania na stronie */
+  align-items: center;
+  justify-content: center;
+}
 
-  }
-  
-  .gallery-header {
-    background-color: rgb(42, 182, 203);
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    height: 33vh;
-    display: flex;
-    justify-content: center; /* Wyśrodkowanie zawartości w osi X */
-    align-items: center; /* Wyśrodkowanie zawartości w osi Y */
-    top: 0;
-    left: 0;
-  }
-  
-  .thumbnails-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    margin-top: 113px; /* Ustawia margines od góry, aby uniknąć zakrycia zawartości przez nagłówek */
-    padding: 20px;
-  }
-  
-  .thumbnail-wrapper {
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .photo-thumbnail {
-    width: 100%;
-    height: auto;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .photo-thumbnail:hover {
-    transform: scale(1.1);
-  }
-  
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 80%;
-    max-height: 80%;
-    overflow: auto;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    max-width: 100%;
-    max-height: 100%;
-    overflow: auto;
-  }
-  
-  .modal-image {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
+.gallery-header {
+  background-color: rgb(42, 182, 203); /* Przywrócenie oryginalnego koloru tła */
+  color: #ffffff; /* Kolor tekstu na biały */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 33vh;
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie zawartości w osi X */
+  align-items: center; /* Wyśrodkowanie zawartości w osi Y */
+  top: 0;
+  left: 0;
+}
 
-  #n7x2{
-    font-size: 40px;
-  }
-  
+#n7x2 {
+  font-size: 40px; /* Przywrócenie oryginalnego rozmiaru nagłówka */
+}
+
+.thumbnails-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 113px; /* Ustawia margines od góry, aby uniknąć zakrycia zawartości przez nagłówek */
+  padding: 20px;
+}
+
+.thumbnail-wrapper {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-thumbnail {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.photo-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.modal-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.modal-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.modal-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.modal-nav-btn.prev {
+  left: 10px;
+}
+
+.modal-nav-btn.next {
+  right: 10px;
+}
+
+.modal-nav-btn i {
+  pointer-events: none;
+}

@@ -9,7 +9,8 @@ import Footer from '../Components/footer.js';
 import Gallery from '../Components/miniGallery.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import logo from '../Zdj/bt-log-pro.png'; // Replace with the correct path to your logo
+import ButtonWrapper from '../Components/ButtonWrapper.js';
+import logo from '../Zdj/bt-log-pro.png';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
 
         
       </div>
+      <ButtonWrapper />
 
       <Footer />
     </div>

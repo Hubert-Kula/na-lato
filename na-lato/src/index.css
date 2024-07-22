@@ -24,8 +24,7 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Changed to flex-start to align items to the top */
-  color: white;
+  justify-content: flex-start; 
   text-align: center;
   transition: height 0.5s ease;
 }
@@ -36,8 +35,8 @@ html, body, #root {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Change brightness filter to a semi-transparent overlay */
   z-index: 1;
+  background: rgba(255, 255, 255, 0)
 }
 
 .fullscreen-image.scrolled {
@@ -47,14 +46,15 @@ html, body, #root {
 .fullscreen-image .logo {
   position: relative;
   z-index: 2;
-  width: 30%; /* Adjust size as needed */
-  margin-top: 25vh; /* Move logo to 1/4 height of the screen */
+  width: 30%; 
+  margin-top: 25vh; 
 }
 
 .fullscreen-image .arrow-down {
   position: absolute;
   bottom: 20px;
   animation: bounce 2s infinite;
+  color: #ffffff;
   z-index: 2;
 }
 
@@ -79,27 +79,7 @@ h1 {
   font-size: 3rem;
 }
 
-/* Menu styles */
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
 
-.menu-item {
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.menu-item:hover {
-  background-color: #555;
-}
 
 /* Features section */
 .features {
@@ -172,35 +152,6 @@ h1 {
   margin-top: 10px;
 }
 
-/* Gallery section */
-/* .gallery {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #e6f7f8;
-}
-
-.gallery .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.gallery .image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.gallery .title {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: rgb(42, 182, 203);
-} */
-
-/* Footer styles */
 .footer {
   padding: 20px;
   background-color: #333;
@@ -208,55 +159,6 @@ h1 {
   text-align: center;
 }
 
-
-
-/* .nasze-domki {
-  font-family: 'Comfortaa', cursive;
-  padding: 20px;
-  color: #333;
-  background-color: #f9f9f9;
+#arup {
+  transform: rotate(45deg);
 }
-
-.nasze-domki .header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.nasze-domki .header h1 {
-  font-size: 2.5rem;
-  color: #2ab6cb;
-}
-
-.nasze-domki .header p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-.nasze-domki .content h2,
-.nasze-domki .content h3 {
-  font-size: 1.5rem;
-  margin-top: 20px;
-  color: #2ab6cb;
-}
-
-.nasze-domki .content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.nasze-domki .content ul li {
-  margin-bottom: 10px;
-}
-
-.nasze-domki .content p {
-  margin-top: 20px;
-}
-
-.nasze-domki .content strong {
-  color: #2ab6cb;
-}
-
- */
-
-
-

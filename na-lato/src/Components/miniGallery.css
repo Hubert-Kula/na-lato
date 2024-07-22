@@ -1,19 +1,17 @@
-/* miniGallery.css */
-
 .gallery-container {
     padding: 20px;
     display: flex;
     justify-content: center;
     z-index: 999;
 }
-  
+
 .custom-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Większa przerwa między obrazkami */
     max-width: 800px; /* Maksymalna szerokość galerii */
 }
-  
+
 .custom-thumbnail {
     max-width: calc(50% - 10px);
     cursor: pointer;
@@ -21,7 +19,7 @@
     border-radius: 8px; /* Zaokrąglenie rogów */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Cień dla miniaturki */
 }
-  
+
 .custom-modal {
     display: flex;
     justify-content: center;
@@ -36,14 +34,14 @@
     background-color: rgba(0,0,0,0.9);
     z-index: 999;
 }
-  
+
 .custom-modal-content {
     margin: auto;
     display: block;
     max-width: 80%;
     max-height: 80%;
 }
-  
+
 .custom-close {
     position: absolute;
     top: 20px;
@@ -52,10 +50,64 @@
     font-size: 40px;
     font-weight: bold;
 }
-  
+
 .custom-close:hover,
 .custom-close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1000;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .custom-gallery {
+        flex-direction: column;
+    }
+
+    .custom-thumbnail {
+        max-width: 100%;
+    }
+}
+
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.neumorphism-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0, 0, 0, 0.25);
+    color: #606060;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.neumorphism-button:hover {
+    box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6), 1px 1px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 1), inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #6b46c1;
 }
